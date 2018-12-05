@@ -1,0 +1,10 @@
+{
+  "extends": [
+    // "eslint:recommended",
+    "standard",
+    "plugin:vue/recommended" // or 'plugin:vue/base'
+  ],
+  "rules": {
+    // override/add rules' settings here
+  }
+}

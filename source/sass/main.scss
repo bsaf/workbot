@@ -1,0 +1,135 @@
+/* Fonts ----------------------------------------------------- */
+
+@font-face {
+    font-family: 'Default';
+    font-weight: 100;
+    src: url('../fonts/Lato/Lato-Hairline.ttf');
+}
+@font-face {
+    font-family: 'Default';
+    font-weight: 200;
+    src: url('../fonts/Lato/Lato-Light.ttf');
+}
+@font-face {
+    font-family: 'Default';
+    font-weight: 400;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'Default';
+    font-weight: 500;
+    src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+@font-face {
+    font-family: 'Default';
+    font-weight: 600;
+    src: url('../fonts/Lato/Lato-Black.ttf');
+}
+@font-face {
+    font-family: 'Default';
+    font-weight: 700;
+    src: url('../fonts/Lato/Lato-Black.ttf');
+}
+
+
+/* Shared ---------------------------------------------------- */
+
+body {
+    background: #F2F2F2;
+    font-family: 'Default', sans-serif;
+    font-weight: 400;
+    min-height: 100%;
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    color: inherit;
+}
+
+h1.screen-title {
+    font-weight: normal;
+    font-size: 45px;
+    color: black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+h2.screen-subtitle {
+    font-weight: normal;
+    font-size: 20px;
+    color: black;
+    letter-spacing: 0.75px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* Fade ---------------------------------------------------- */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .3s ease-in-out;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+/* Admin menu ---------------------------------------------------- */
+
+ul.adminMenu {
+    position: absolute;
+    z-index: 100000;
+    bottom: 20px;
+    left: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.adminMenu li {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    &:hover { background:  rgba(255,255,255,0.5); color: black; }
+}
+
+.devMode {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px 30px;
+    position: absolute;
+    top: 0px;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    z-index: 10;
+}
+
+#screen-algorithm.hideCursor,
+.screen-camera.hideCursor,
+#screen-browser.hideCursor {
+    cursor: none;
+}
