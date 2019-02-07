@@ -4,7 +4,7 @@
   "description": "Workbot installation for Vienna",
   "main": "source/js/main.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --inline --hot ",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --https",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "lint": "./node_modules/eslint/bin/eslint.js test source source/components/*.vue; exit 0;",
     "test": "npm run lint && mocha --watch --compilers js:babel-core/register --recursive --reporter dot"
